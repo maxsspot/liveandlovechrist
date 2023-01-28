@@ -31,7 +31,7 @@
 		<br>
 		<br>
 		<br>
-		<p><b>Official website for the reposting of my TikTok videos about Christ and Christianity.</b></p>
+		<p><b>Official website for the reposting of my TikTok videos about Christ and Christianity.</b><br><a onclick = "sharenow()">Share this message with others!</a></p>
 		<br>
 		<br>
 		<br>
@@ -156,6 +156,14 @@
 				document.getElementsByTagName("blockquote").loop = true;
 			}, 1);
 			
+			function sharenow () {
+				if (navigator.share) { 
+					navigator.share({ 
+						title:'@liveandlovechrist on TikTok', 
+						text:'Would you like to learn more about Christ and Christianity? Ii found a website that teaches just that! https://liveandlovechrist.netlify.app/'}) 
+					.then(() => console.log('Successful share')) 
+					.catch((error) => console.log('Error sharing', error)); }
+			}
 		</script>
     </body>
 </html>
