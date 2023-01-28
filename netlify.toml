@@ -8,7 +8,7 @@
             includeSubDomains;
             preload
         '''
-        
-        Permissions-Policy= '''
-            autoplay=(),
+
+        Content-Security-Policy = '''
+            script-src 'none';
         '''
