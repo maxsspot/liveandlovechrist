@@ -2,7 +2,6 @@
     for = "/*"
     [headers.values]
         Cache-Control = "max-age=604800"
-        Content-Encoding = "gzip"
 
         Strict-Transport-Security = '''
             max-age=31557600;
