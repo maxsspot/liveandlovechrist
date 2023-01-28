@@ -6,9 +6,6 @@
         Referrer-Policy = "no-referrer"
         X-Content-Type-Options = "nosniff"
         X-Frame-Options = "allowall"
-        Cross-Origin-Opener-Policy = "same-origin"
-        Cross-Origin-Resource-Policy = "same-origin"
-        Cross-Origin-Embedder-Policy = "require-corp"
         Access-Control-Allow-Origin = "https://liveandlovechrist.netlify.app"
         
         Permissions-Policy = '''
