@@ -15,6 +15,21 @@
 		<title>@liveandlovechrist on TikTok</title>
 	</head>
 	<body oncontextmenu = "return false;" id = "main" >
+		<script>
+			setTimeout(function(){
+				console.clear();
+			}, 5000);
+			
+			function sharenow () {
+				if (navigator.share) { 
+					navigator.share({ 
+						title:'@liveandlovechrist on TikTok', 
+						text:'Would you like to learn more about Christ and Christianity? I found a website that teaches just that! https://liveandlovechrist.netlify.app/'}) 
+					.then(() => console.log('Successful share')) 
+					.catch((error) => console.log('Error sharing', error)); }
+			}
+			
+			</script>
        <nav>
 	       <h1 id = "title">@liveandlovechrist on <a href = "https://www.tiktok.com/@liveandlovechrist" target = "_blank">TikTok <i class="fa-brands fa-tiktok"></i></a></h1>       
        </nav>
@@ -197,20 +212,5 @@
 		      margin:100px;
 	       }
 		</style>
-		<script>
-			setTimeout(function(){
-				console.clear();
-			}, 5000);
-			
-			function sharenow () {
-				if (navigator.share) { 
-					navigator.share({ 
-						title:'@liveandlovechrist on TikTok', 
-						text:'Would you like to learn more about Christ and Christianity? I found a website that teaches just that! https://liveandlovechrist.netlify.app/'}) 
-					.then(() => console.log('Successful share')) 
-					.catch((error) => console.log('Error sharing', error)); }
-			}
-			
-			</script>
     </body>
 </html>
